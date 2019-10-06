@@ -1,5 +1,10 @@
+*{
+	padding: 0;
+	margin: 0;
+}
 html{
 	scroll-behavior: smooth;
+	font-size: 16px;
 }
 
 body{
@@ -23,7 +28,7 @@ header{
 
 header h1{
 	margin-top:0;
-	font-size: 75px;
+	font-size: 4.5rem;
 	color: white;
 	font-style: oblique;
 }
@@ -37,73 +42,32 @@ nav{
     position: sticky;
     top: 0px;
     background: transparent;
-    width: 100%;
+	width: 100%;
 }
 nav ol{
     list-style: none;
-    display: flex;
 	padding-left: 0px;
+	display: flex;
+	width: 100%;
 }
 
 nav ol li{
-    width: 100%;
-    text-align: center;
+	width: 100%;
+	text-align: center;
 	border-right: 1px solid black;
+	background: rgb(24, 24, 197);
 }
 
 
 
 nav ol li a{
-	background: rgb(24, 24, 197);
+	height: 100%;
     text-decoration: none;
     display:block;
 	color:white;
 	padding-top: 20px;
 	padding-bottom: 20px;
-    font-size: 16pt;
-}
-/*
-nav ol li a:hover{
-	transform: translateY(15px);
-	transition: .5s;
-}*/
-
-nav ol li:hover .subMenu{
-	visibility: visible;
-}
-
-.subMenu{
-	position: absolute;
-	left: 1%;
-	display: block;
-	visibility: collapse;
-	list-style: none;
-	padding-left: 0px;
-}
-
-
-.subMenu li{
-    width: 100%;
-    text-align: center;
-	border-top: 1px solid black;
-}
-
-
-.subMenu li a{
-    text-decoration: none;
-    display:block;
-	color:white;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 16pt;
-}
-
-.subMenu li a:hover{
-	background: lightblue;
-	transform: translateX(20px);
-	transition: .5s;
+    font-size: 1.4rem;
 }
 
 footer{
@@ -115,7 +79,7 @@ footer{
 	background-size: cover;
 	background-position: center center;
 	color: white;
-	font-size: 25px;
+	font-size: 1.5rem;
 }
 
 #seccionInicio{
@@ -172,8 +136,7 @@ footer{
 	color: white;
 	background-color:gray;
 	border: 5px solid lightblue;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding: 2rem 10%;
 }
 .contenido h1{
 	text-align: center;
@@ -186,15 +149,18 @@ footer{
 #redes{
 	position: fixed;
     left:10px;
-    top: 50%;
-    background:transparent;
+	top: 50%;
+	transform: translateY(-50%);
+	background:transparent;
+	z-index: 0;
 }
 #redes a{
     display: block;
     background-color: white;
-    padding: 20px;
+    padding: 1rem;
 	border-bottom:1px solid transparent;
 	border-right: 0;
+	font-size: 2rem;
 }
 
 #redes a:hover{
@@ -212,10 +178,59 @@ footer{
     border-radius: 100%;
     border:0px;
     background: white;
-    padding: 10px;
+    padding: 0.6rem;
 }
 
 #boton-arriba button:hover{
 	transform: scale(1.5);
 	transition: .5s;
+}
+
+.trigger{
+	display:none;
+}
+
+.menuTexto{
+	display: none;
+}
+
+@media screen and (max-width: 578px){
+	html{
+		font-size: 13px;
+	}
+
+	nav ol li{
+		border-right: 0;
+	}
+
+	nav ol > li{
+		border-top: 1px solid white;
+	}
+	.menuTexto{
+		display: block;
+	}
+	.colapse{
+	background: rgb(24, 24, 197);
+	color:white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1.4rem;
+	z-index: 1000;
+	}
+	.colapse:hover .menuColapse{
+		visibility: visible;
+		transition:all 1s ease 0s;
+		z-index: 1000;
+	}
+
+	.menuColapse{
+		position: absolute;
+		visibility: collapse;
+		display:block;
+		z-index: 1000;
+	}
+
+	#redes{
+		display: none;
+	}
 }
