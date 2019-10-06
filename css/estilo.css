@@ -1,0 +1,221 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+	padding:0;
+	background-color: cornflowerblue;
+}
+
+header{
+	background-image: url("../img/img-header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 200px;
+	text-shadow: 1px 1px 10px green, -2px -2px 10px green;
+}
+
+header h1{
+	margin-top:0;
+	font-size: 75px;
+	color: white;
+	font-style: oblique;
+}
+
+section{
+	width: 100%;
+	height: 100%;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    background: transparent;
+    width: 100%;
+}
+nav ol{
+    list-style: none;
+    display: flex;
+	padding-left: 0px;
+}
+
+nav ol li{
+    width: 100%;
+    text-align: center;
+	border-right: 1px solid black;
+}
+
+
+
+nav ol li a{
+	background: rgb(24, 24, 197);
+    text-decoration: none;
+    display:block;
+	color:white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    font-size: 16pt;
+}
+/*
+nav ol li a:hover{
+	transform: translateY(15px);
+	transition: .5s;
+}*/
+
+nav ol li:hover .subMenu{
+	visibility: visible;
+}
+
+.subMenu{
+	position: absolute;
+	left: 1%;
+	display: block;
+	visibility: collapse;
+	list-style: none;
+	padding-left: 0px;
+}
+
+
+.subMenu li{
+    width: 100%;
+    text-align: center;
+	border-top: 1px solid black;
+}
+
+
+.subMenu li a{
+    text-decoration: none;
+    display:block;
+	color:white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 16pt;
+}
+
+.subMenu li a:hover{
+	background: lightblue;
+	transform: translateX(20px);
+	transition: .5s;
+}
+
+footer{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: url("../img/img-header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: white;
+	font-size: 25px;
+}
+
+#seccionInicio{
+	background-attachment: fixed;
+	background-image: url("../img/img-inicio.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#seccion1{
+	background-attachment: fixed;
+	background-image: url("../img/img-trabajo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#seccion2{
+	background-attachment: fixed;
+	background-image: url("../img/img-menos.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#seccion3{
+	background-attachment: fixed;
+	background-image: url("../img/img-viaje.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#seccion4{
+	background-attachment: fixed;
+	background-image: url("../img/img-NoCom.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#seccion5{
+	background-attachment: fixed;
+	background-image: url("../img/img-personaje.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.seccion{
+	padding-top: 30%;
+	padding-bottom: 30%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: tan;
+}
+
+.contenido{
+	color: white;
+	background-color:gray;
+	border: 5px solid lightblue;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.contenido h1{
+	text-align: center;
+}
+
+.contenido p{
+	text-align: justify;
+}
+
+#redes{
+	position: fixed;
+    left:10px;
+    top: 50%;
+    background:transparent;
+}
+#redes a{
+    display: block;
+    background-color: white;
+    padding: 20px;
+	border-bottom:1px solid transparent;
+	border-right: 0;
+}
+
+#redes a:hover{
+	transform: translateX(10px);
+	transition: .5s;
+}
+
+#boton-arriba{
+    right: 1%;
+    position: fixed;
+    top:90%;
+}
+
+#boton-arriba button{
+    border-radius: 100%;
+    border:0px;
+    background: white;
+    padding: 10px;
+}
+
+#boton-arriba button:hover{
+	transform: scale(1.5);
+	transition: .5s;
+}

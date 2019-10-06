@@ -1,0 +1,64 @@
+/*
+<div class="formulario">
+	<h1>Contactanos</h1>
+	<form action="" method="post">
+		<label for="nombre">Nombre:<input type="text" name="nombre" placeholder="Nombre" required></label><br>
+		<label for="correo">Correo:<input type="email" name="correo" placeholder="Correo" required></label><br>
+		<label for="mensaje">Mensaje</label><br>
+		<textarea name="mensaje" placeholder="Mensaje..."></textarea><br>
+		<input type="submit" value="Enviar" id="boton">
+	</form>
+</div>
+*/
+
+.formulario{
+    background:rgba(192, 187, 180, 0.788);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+.formulario form input:focus{
+    text-shadow: none;
+}
+.formulario h1{
+    text-align: center;
+}
+
+.formulario form{
+    font-size: 14pt;
+    
+}
+
+.formulario form input{
+    margin-bottom: 20px;;
+    margin-left: 20px;
+    border: 0px;
+    background: transparent;
+    border-bottom: 1px solid red;
+    text-align: center;
+    font-size: 14pt;
+    width:350px;
+}
+
+.formulario form input[type="email"]{
+    margin-left: 30px;
+}
+
+.formulario textarea{
+    font-size: 14pt;
+    width: 93%;
+    height: 200px;
+    resize: none;
+}
+
+.formulario form input[type="submit"]{
+    margin-left: 0px;
+    margin-top: 4%;
+    border: none;
+    background: red;
+    padding: 5% 47%;
+    font-size: 16pt;
+    color:white;
+}
